@@ -129,6 +129,7 @@ class CourseDetailSerializers(serializers.ModelSerializer):
     ratings = ReviewSerializer(read_only=True, many=True)
     created_at = serializers.DateTimeField(format('%d-%m-%Y'))
     updated_at = serializers.DateTimeField(format('%d-%m-%Y'))
+
     class Meta:
         model = Courses
         fields = ['course_name', 'description', 'level', 'price', 'course_lesson',

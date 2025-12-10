@@ -20,7 +20,6 @@ from django.conf.urls.i18n import i18n_patterns
 
 from django.conf import settings
 from django.conf.urls.static import static
-
 from rest_framework_swagger.views import get_swagger_view
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
